@@ -14,9 +14,9 @@ img {
 }
 
 .container {
+  margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  margin: 0 auto;
 }
 
 /* ========================================================
@@ -40,19 +40,19 @@ Hamburger Menu Styles
 ======================================================== */
 
 .nav-toggle {
-  cursor: pointer;
-  border: 0;
-  width: 3em;
-  height: 3em;
-  padding: 0em;
-  border-radius: 50%;
-  background: #2e323f;
-  color: white;
-  transition: opacity 250ms ease;
   position: absolute;
   left: 0;
-  margin-left: 5%;
   z-index: 2;
+  transition: opacity 250ms ease;
+  cursor: pointer;
+  margin-left: 5%;
+  border: 0;
+  border-radius: 50%;
+  background: #2e323f;
+  padding: 0em;
+  width: 3em;
+  height: 3em;
+  color: white;
 }
 
 .nav-toggle:focus,
@@ -61,8 +61,8 @@ Hamburger Menu Styles
 }
 
 .hamburger {
-  width: 50%;
   position: relative;
+  width: 50%;
 }
 
 .hamburger,
@@ -70,14 +70,14 @@ Hamburger Menu Styles
 .hamburger::after {
   display: block;
   margin: 0 auto;
-  height: 3px;
   background: white;
+  height: 3px;
 }
 
 .hamburger::before,
 .hamburger::after {
-  content: '';
   width: 100%;
+  content: "";
 }
 
 .hamburger::before {
@@ -94,9 +94,9 @@ Logo and Navigation Styles
 
 .crl-logo {
   display: block;
-  width: 3rem;
   margin: 0 auto;
   margin-top: 0.5rem;
+  width: 3rem;
 }
 
 .nav {
@@ -109,21 +109,21 @@ Logo and Navigation Styles
 }
 
 .nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .nav-link {
-  font-family: 'Oswald', sans-serif;
+  color: #ffffff;
   font-weight: 600;
   font-size: 1rem;
+  font-family: "Oswald", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #ffffff;
 }
 
 .signin-link {
@@ -145,10 +145,10 @@ Logo and Navigation Styles
 
 .signup-link {
   display: block;
-  color: #ffffff;
-  padding: 0.25em 1em 0.25em 1em;
   border-radius: 20px;
   background-color: #a59678;
+  padding: 0.25em 1em 0.25em 1em;
+  color: #ffffff;
 }
 
 @media (min-width: 700px) {
@@ -214,12 +214,12 @@ Hero Section Styles
 }
 
 .hero-title {
-  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  color: #ffffff;
   font-weight: 600;
   font-size: 3rem;
   line-height: 3rem;
-  color: #ffffff;
-  margin: 0;
+  font-family: "Oswald", sans-serif;
   text-align: center;
 }
 
@@ -229,28 +229,28 @@ Hero Section Styles
 }
 
 .hero-desc {
-  font-family: 'Montserrat', sans-serif;
-  color: #ffffff;
-  text-align: center;
   display: block;
-  max-width: 600px;
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  max-width: 600px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 
 .hero-btn {
-  padding: 0.5em 1.25em 0.5em 1.25em;
-  border-radius: 25px;
-  border: 0;
-  text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: #ffffff;
-  background-color: #a59678;
   display: block;
   margin: 0 auto;
+  border: 0;
+  border-radius: 25px;
+  background-color: #a59678;
+  padding: 0.5em 1.25em 0.5em 1.25em;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.15rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
 }
 
 @media (min-width: 1000px) {
@@ -266,9 +266,9 @@ Hero Section Styles
   }
 
   .hero-title {
-    text-align: left;
     font-size: 5rem;
     line-height: 5rem;
+    text-align: left;
   }
 
   .hero-title-diff {
@@ -276,19 +276,19 @@ Hero Section Styles
   }
 
   .hero-right {
-    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
+    width: 50%;
   }
 
   .hero-desc {
-    max-width: 95%;
-    text-align: left;
-    line-height: 2rem;
-    font-size: 1.25rem;
     margin: 1rem 0 1rem 0;
+    max-width: 95%;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: left;
   }
 
   .hero-btn {
@@ -309,21 +309,21 @@ Offer Section Styles
 }
 
 .offer-item {
-  text-align: center;
-  max-width: 80%;
   margin: 0 auto;
+  max-width: 80%;
+  text-align: center;
 }
 
 .offer-title {
   margin: 0;
-  font-family: 'Oswald', sans-serif;
-  font-weight: 700;
   color: #a59678;
+  font-weight: 700;
+  font-family: "Oswald", sans-serif;
 }
 
 .offer-desc {
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.75rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 700px) {
@@ -357,15 +357,15 @@ Info Section Styles
 }
 
 .info-left-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
-  color: #a59678;
   margin: 0;
+  color: #a59678;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
 }
 
 .info-left-text {
-  font-family: 'Montserrat', sans-serif;
   line-height: 1.75rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .info-right-item {
@@ -379,21 +379,21 @@ Info Section Styles
 }
 
 .info-right-item-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
   color: #ffffff;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
 }
 
 .info-right-item-text {
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   line-height: 1.75rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (min-width: 700px) {
   .info-img {
-    object-fit: cover;
     max-height: 200px;
+    object-fit: cover;
   }
 
   .info-right {
@@ -413,10 +413,10 @@ Info Section Styles
 
 @media (min-width: 1000px) {
   .info-box {
-    padding-top: 6em;
-    padding-bottom: 6em;
     display: flex;
     justify-content: space-around;
+    padding-top: 6em;
+    padding-bottom: 6em;
   }
 
   .info-img {
@@ -438,8 +438,8 @@ Info Section Styles
   }
 
   .info-right-item + .info-right-item {
-    margin-left: 0;
     margin-top: 1rem;
+    margin-left: 0;
   }
 }
 
@@ -456,49 +456,49 @@ Footer Section Styles
 }
 
 .footer-title {
-  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  color: #ffffff;
   font-weight: 700;
   font-size: 2rem;
-  color: #ffffff;
+  font-family: "Oswald", sans-serif;
   text-align: center;
-  margin: 0;
 }
 
 .footer-text-box {
+  margin: 0 auto;
   max-width: 80%;
   text-align: center;
-  margin: 0 auto;
 }
 
 .footer-text-title,
 .footer-link-group-title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 600;
   color: #a59678;
+  font-weight: 600;
+  font-family: "Oswald", sans-serif;
 }
 
 .footer-text {
-  font-family: 'Montserrat', sans-serif;
   color: #ffffff;
   line-height: 1.75rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 .footer-link-group {
+  margin: 0 auto;
   max-width: 80%;
   text-align: center;
-  margin: 0 auto;
 }
 
 .footer-link-group-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .footer-link-group-link {
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
   color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
 }
 
 .footer-link-group-item + .footer-link-group-item {
@@ -512,9 +512,9 @@ Footer Section Styles
 
 @media (min-width: 700px) {
   .footer-title {
-    font-size: 3rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    font-size: 3rem;
   }
 
   .footer-content-box {
@@ -538,9 +538,9 @@ Footer Section Styles
   }
 
   .footer-title {
-    font-size: 3.5rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    font-size: 3.5rem;
   }
 
   .footer-link-group {
